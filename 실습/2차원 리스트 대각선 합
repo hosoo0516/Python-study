@@ -1,0 +1,6 @@
+matrix = [list(map(int,input().split())) for _ in range(3)]
+sum = 0
+for i in range(3):
+    sum += matrix[i][i]
+
+print(sum)
