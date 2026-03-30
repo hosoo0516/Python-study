@@ -1,0 +1,10 @@
+#최고 점수 학생
+#학생 이름을 key, 점수를 value로 하는 딕셔너리를 만들고 가장 높은 점수의 학생을 출력하세요.
+
+student = {}
+for i in range(3):
+    name = input(f"{i+1} 학생의 이름을 입력하시오: ")
+    student[name] = input(f"{name} 학생의 점수를 입력하시오: ")
+
+top_student = max(student, key=student.get)
+print(top_student)
