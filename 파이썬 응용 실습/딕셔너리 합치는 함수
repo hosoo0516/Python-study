@@ -1,0 +1,12 @@
+#BONUS 두 딕셔너리를 합치는 merge_dicts() 함수를 만들고 같은 키가 있으면 값을 합산하세요.
+
+dict1 = {"사과" : 3, "바나나" : 5, "체리" : 2}
+dict2 = {"수박" : 8, "바나나" : 1, "복숭아" : 4}
+
+def merge_dicts(d1,d2):
+    result = d1.copy()
+    for key, value in d2.items():
+        result[key] = result.get(key, 0) + value
+    
+    return result
+print(merge_dicts(dict1, dict2))
