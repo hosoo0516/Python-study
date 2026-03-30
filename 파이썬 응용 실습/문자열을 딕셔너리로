@@ -1,0 +1,9 @@
+#빈도 계산기
+#문자열 "hello world"에서 각 문자의 등장 횟수를 딕셔너리로 구하세요. (공백 제외)
+string = "hello world"
+count = {}
+
+for spl in string:
+    count[spl] = count.get(spl, 0) + 1
+
+print(count)
